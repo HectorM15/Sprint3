@@ -1,11 +1,13 @@
-source "https://rubygems.org"
+source 'http://rubygems.org'
 
 group :test do
-  gem "capybara"
-  gem 'poltergeist'
   gem 'rails', '3.0.0.rc'
+  gem 'sqlite3-ruby'
   gem "rspec-rails"
   gem "cucumber-rails"
-  gem 'cucumber', '~> 4.0.0.rc.1'
+  gem "capybara"
+  gem 'cucumber', '~> 3.1.0'
+  gem 'rspec','~> 3.7.0'
   gem 'selenium-webdriver'
- end
+  gem 'poltergeist'
+end
