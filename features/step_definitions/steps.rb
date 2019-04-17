@@ -40,7 +40,7 @@ Given(/^I am on the home page$/) do
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
-  fill_in element, with: text
+  fill_in 'search', with: text
 end
 
 Then(/^I should see "(.*?)"$/) do |text|
