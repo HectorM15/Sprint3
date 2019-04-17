@@ -34,3 +34,17 @@ Then("devuelvo trenes") do
   puts page.inspect
   page.should have_content 'A'
 end
+
+Given(/^I am on the home page$/) do
+  puts  visit "http://www.youtube.com"
+end
+
+When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
+  fill_in element, with: text
+end
+
+Then(/^I should see "(.*?)"$/) do |text|
+  page.should have_content text
+
+
+end
