@@ -36,11 +36,11 @@ Then("devuelvo trenes") do
 end
 
 Given(/^I am on the home page$/) do
-  puts  visit "http://www.youtube.com"
+  puts  visit "https://www.youtube.com/watch?v=NoxF1VpdK9I"
 end
 
-When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
-  fill_in 'search', with: text
+When /^I press space$/ do
+  click_button 'Botón de reproducción (k)'
 end
 
 Then(/^I should see "(.*?)"$/) do |text|

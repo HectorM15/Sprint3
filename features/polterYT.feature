@@ -1,9 +1,6 @@
-Feature: Google Search to explore poltergiest
-  In order to expolre poltergeist functionality
-  As a capybara and poltergeist user
-  I want to see the if it works on Google search page
+Feature:
 
   Scenario: View home page
     Given I am on the home page
-    When I fill in "search" with "shashi"
-    Then I should see "Youtube"
+    When I press space
+    Then I should see "INICIAR SESIÓN"
